@@ -6,10 +6,9 @@
                 <div class="sidebar-content">
                     <div class="sidebar-brand">
                         <div style="margin: auto;">
-                            <img class='logo-style'
-                                 src='../assets/images/login_logo.png'>
-                            <div><label>景津环保股份有限公司</label></div>
-                            <div><label>远程运维平台</label></div>
+                            <img class='logo-style'>
+                            <div><label>xxxxxx有限公司</label></div>
+                            <div><label>xxxx平台</label></div>
                         </div>
                     </div>
                 </div>

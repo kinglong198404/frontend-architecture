@@ -1,13 +1,18 @@
 <template>
-    <div id="all">
+    <div class="tree-wrapper">
         <tree :list="nodes" ></tree>
     </div>
 </template>
 <style scoped>
-    #all{
+    .tree-wrapper{
         width:100%;
         height: 100%;
+        overflow: auto;
     }
+    /*.tree-wrapper {*/
+        /*height: 100%;*/
+        /*overflow: auto;*/
+    /*}*/
 
 </style>
 <script>
@@ -15,79 +20,42 @@
         data(){
             return{
                 nodes:[{
-                    name:"一级节点",
+                    menu_name:"一级节点",
                     level:0,
                     isOpen:false,
+                    menu_icon:"cloud",
                     children:[
                         {
-                            name:"页面",
+                            menu_name:"页面",
                             level:1,
                             isOpen:false,
+                            menu_icon:"cloud",
                             children:[
                                 {
-                                    name:"首页",
+                                    menu_name:"首页",
                                     level:2,
-                                    url:"/home",
-                                    isOpen:true,
-                                    children:[]
+                                    menu_icon:"cloud",
+                                    menu_url:"/home",
+                                    isOpen:false,
+                                    children:null
                                 },
                                 {
-                                    name:"节点1-2",
+                                    menu_name:"ht",
                                     level:2,
-                                    isOpen:true,
-                                    children:[]
+                                    menu_icon:"cloud",
+                                    menu_url:"/ht",
+                                    isOpen:false,
+                                    children:null
                                 }
                             ]
-                        },
-                        {
-                            name:"ht",
-                            level:1,
-                            url:"/ht",
-                            isOpen:false,
-                            children:[
-                                {
-                                    name:"节点2-1",
-                                    level:2,
-                                    isOpen:true,
-                                    children:[]
-                                },
-                                {
-                                    name:"节点2-2",
-                                    level:2,
-                                    isOpen:true,
-                                    children:[]
-                                }
-                            ]
-
                         }
                     ]
                 },{
-                    name:"一级节点2",
+                    menu_name:"一级节点2",
                     level:0,
                     isOpen:false,
-                    children:[
-                        {
-                            name:"ht",
-                            level:1,
-                            url:"/ht",
-                            isOpen:false,
-                            children:[
-                                {
-                                    name:"节点2-1",
-                                    level:2,
-                                    isOpen:true,
-                                    children:[]
-                                },
-                                {
-                                    name:"节点2-2",
-                                    level:2,
-                                    isOpen:true,
-                                    children:[]
-                                }
-                            ]
-
-                        }
-                    ]
+                    menu_icon:"cloud",
+                    menu_url:"/ht"
                 }]
             }
         }
