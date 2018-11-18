@@ -1,0 +1,79 @@
+/*全局引入字体*/
+
+/*@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";*/
+
+ #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #666;
+}
+
+/*sidebar start*/
+.page-wrapper{
+    box-sizing: border-box;
+}
+
+.sidebar-wrapper {
+    width: 260px;
+    height: 100%;
+    max-height: 100%;
+    position: fixed;
+    top: 0;
+    /*left: -300px;*/
+    z-index: 999;
+    background-color: #d3d1d1;
+}
+.sidebar-content{
+    height: 165px !important;
+}
+.logo-wrapper {
+    margin: auto;
+}
+
+.logo-style {
+    /*width: 60%;*/
+    /*height: 100%;*/
+    width: 84px;
+    height: 85px;
+}
+
+.sidebar-brand {
+    text-align: center;
+    margin-right: 15px
+}
+
+.sidebar-brand .sidebar-wrapper {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.test{
+    width: 250px;
+    overflow: auto;
+    float: left;
+    margin: 5px;
+    border: none;
+}
+/*sidebar end*/
+
+
+.my-top {
+    background-color: #d3d1d1 !important;
+    color: #0f0f0f;
+    margin-bottom: 5px !important;
+    z-index: 998 !important;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 4px;
+    }
+}
+
+.main{
+    margin-left: 300px;
+}
