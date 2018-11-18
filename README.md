@@ -1,5 +1,5 @@
 一、Vue技术栈：webpack+vue+es6+nodejs+BootStrap+jQuery
-
+    NodeJs：JavaScript运行环境，辅助项目构建等
     webpack：预编译和打包
     vue.js：框架、数据绑定
     vue-router：路由机制
@@ -8,8 +8,8 @@
     vue-moment：时间 格式化
     jquery:轻量的、功能丰富的js库
     axios：网络Http请求
-    BootStrap：UI库
-    NodeJs：JavaScript运行环境，辅助项目构建等
+    bootstrap：UI库
+    fontawesome: 字体图标 https://fontawesome.com/icons
 
 二、开发环境：Webpack及插件安装
 

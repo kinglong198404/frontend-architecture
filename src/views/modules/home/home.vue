@@ -1,5 +1,5 @@
 <template >
-    <div>
+    <div id="home">
         <div>这里是首页</div>
         <a href="./login.html">登录</a>
         <!--推荐使用下面这种，这样只要名称对象，路径发生了变化也不影响-->
@@ -22,4 +22,8 @@
         }
     }
 </script>
-<style></style>
+<style scoped>
+    #home{
+        padding-top:12px;
+    }
+</style>

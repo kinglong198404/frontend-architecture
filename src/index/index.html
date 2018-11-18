@@ -5,11 +5,26 @@
     <title>景津设备远程运维平台</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script>
+
+        // 离开前的确认提示
+        // 用户打开页面后：有点击操作关闭时才有提示；如果用户没进行操作，不会弹出提示。有的ide页不提示。
+        function addOnBeforeUnload(e) {
+            var ev = e || event;
+            ev && (ev.returnValue = '你确定要离开？');
+        }
+        if(window.attachEvent){
+            window.attachEvent('onbeforeunload', addOnBeforeUnload);
+        } else {
+            window.addEventListener('beforeunload', addOnBeforeUnload, false);
+        }
+    </script>
 </head>
 <body>
-  <!--这里的app是随便定义的id值，该div是一个占位的坑-->
-  <div id="app"></div>
+<!--这里的app是随便定义的id值，该div是一个占位的坑-->
+<div id="app"></div>
 </body>
 
 </html>

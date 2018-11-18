@@ -50,9 +50,10 @@ let router = new VueRouter({
     ]
 });
 
-import Tree from 'vuejs-tree'
-// import Tree from '../scripts/plugins/vuejs-tree/Tree.vue'
-// Vue.use(Tree)  // use无效
+// import Tree from 'vuejs-tree'
+// Vue.component('tree',Tree);// Vue.use(Tree) 无效
+
+import Tree from '../plugins/tree-menu/tree.vue'
 Vue.component('tree',Tree);
 
 new Vue({
